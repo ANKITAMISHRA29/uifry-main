@@ -1,0 +1,269 @@
+/* reusable css */
+@font-face {
+  font-family: Clash Display;
+  src: url("assets/font/ClashDisplay.ttf"), format(".ttf");
+}
+
+* {
+  font-family: Clash Display;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #ff5555;
+}
+
+.active {
+  color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.btn-dark {
+  padding: 12px 38px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.subtitle {
+  color: #000;
+  text-align: justify;
+  font-family: Clash Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 90%;
+  text-transform: capitalize;
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-primary {
+  background: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-content {
+  top: 30%;
+}
+
+.hero-title {
+  max-width: 65%;
+  color: #000;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.hero-subtitle {
+  max-width: 55%;
+}
+
+/* Responsive CSS */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  
+  .hero-subtitle {
+    max-width: 100%;
+  }
+  
+  .hero-content-img img,
+  .hero-img img {
+    max-width: 100%;
+  }
+  
+  .hero-content-img,
+  .hero-img {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: #fff;
+  }
+  
+  .hero-title {
+    font-size: 42px;
+    max-width: 100%;
+    line-height: 48px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content-img,
+  .hero-img {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .hero-content-img img,
+  .hero-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .hero-content-img,
+  .hero-img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .get-start .btn-dark {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .hero-content {
+    padding: 10px;
+  }
+
+  .hero-content-img,
+  .hero-img {
+    display: none;
+  }
+}
+
+/* Features Section */
+.features-sec img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .features-sec h1 {
+    font-size: 32px;
+  }
+
+  .features-sec h3 {
+    font-size: 20px;
+  }
+
+  .features-sec .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* Advantage Section */
+.advantange-sec img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .advantange-sec h1 {
+    font-size: 32px;
+  }
+
+  .advantange-sec h3 {
+    font-size: 20px;
+  }
+
+  .advantange-sec .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* Testimonial Section */
+.testimonial-sec img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .testimonial-sec h1 {
+    font-size: 32px;
+  }
+
+  .testimonial-sec h3 {
+    font-size: 20px;
+  }
+
+  .testimonial-sec .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* FAQ Section */
+.faq-section .card {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .faq-section h1 {
+    font-size: 32px;
+  }
+
+  .faq-section h2 {
+    font-size: 20px;
+  }
+
+  .faq-section .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container div {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  footer .container div {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
